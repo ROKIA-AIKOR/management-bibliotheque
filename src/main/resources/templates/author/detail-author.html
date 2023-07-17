@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Add Authors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+</head>
+
+<body>
+<div th:insert="comman/header :: header"></div>
+<div class="container my-5">
+    <h3>Detail d'auteur</h3>
+
+    <div class="card-body">
+        <div class="col-md-10">
+
+
+            <p> Nom d'autheur:  <span  th:text="${author.name_author}"></span></p>
+            <p>Description: <span  th:text="${author.description}"></span></p>
+
+        </div>
+    </div>
+</div>
+
+<div th:insert="comman/footer :: footer"></div>
+
+</body>
+
+</html>
